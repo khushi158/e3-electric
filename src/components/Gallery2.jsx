@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import scooter from '../assets/image-2.svg';
-import build from '../assets/image-1.svg';
+import build from '../assets/Image-1.svg';
 import parts from '../assets/image-3.svg';
 
 const Gallery2 = () => {
