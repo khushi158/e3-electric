@@ -1,6 +1,6 @@
 import React from 'react';
 import { Zap, Shield, Smartphone, CheckCircle } from 'lucide-react';
-import herobike from '../assets/Image-11.svg';
+import herobike from '../assets/image122.png';
 import { motion, useInView } from 'framer-motion';
 
 // Optimized animation variants
