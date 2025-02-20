@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
 import './App.css';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState(0);
@@ -93,6 +94,7 @@ const App = () => {
           </div>
           <div className="w-full bg-gray-900 text-white">
             <Footer />
+            <Analytics/>
           </div>
         </section>
       </div>

@@ -60,11 +60,7 @@ const Header = () => {
         </a>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-8 text-gray-600">
-          <a href="#products" className="hover:text-black transition">PRODUCTS</a>
-          <a href="#gallery" className="hover:text-black transition">GALLERY</a>
-          <a href="#contact" className="hover:text-black transition">CONTACT</a>
-        </nav>
+        
 
         {/* "I'm Interested" Button */}
         <button
