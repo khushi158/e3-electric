@@ -1,6 +1,5 @@
 import { Facebook, Twitter, Instagram, ChevronUp, Mail } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
-
 import { useState, useEffect } from "react";
 
 const Footer = () => {
@@ -54,12 +53,23 @@ const Footer = () => {
     setSubscriptionStatus(null);
     
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const response = await fetch('https://newsletter.khushibanchhor21.workers.dev/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email })
+      });
+
+      if (!response.ok) {
+        throw new Error('Subscription failed');
+      }
+
       setSubscriptionStatus('success');
       setEmail("");
     } catch (error) {
       setSubscriptionStatus('error');
+      console.error('Subscription error:', error);
     } finally {
       setIsSubmitting(false);
     }
@@ -119,9 +129,6 @@ const Footer = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start"
         >
-          {/* Image Section */}
-         
-
           {/* Links Sections */}
           {['About', 'Resources', 'Legals'].map((section, index) => (
             <motion.div key={section} variants={itemVariants} className="col-span-1">
