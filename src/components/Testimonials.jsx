@@ -1,7 +1,7 @@
 import React from "react";
-import one from "../assets/image (9).svg";
-import two from "../assets/image (10).svg";
-import three from "../assets/image (11).svg";
+import one from "../assets/image-9.svg";
+import two from "../assets/image-10.svg";
+import three from "../assets/image-11.svg";
 
 const TestimonialCard = ({ name, role, quote, avatar }) => (
   <div className=" p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 border border-gray-200">

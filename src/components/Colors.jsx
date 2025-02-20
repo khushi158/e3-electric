@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {Img} from 'react-image'
-import big from "../assets/image (6).svg";
+
 import big1 from "../assets/1.svg";
 import big2 from "../assets/2.svg";
 import big3 from "../assets/3.svg";

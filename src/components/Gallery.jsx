@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from '../assets/image (5).svg';
+import image1 from '../assets/image-5.svg';
 
 
 const MotorView = () => {

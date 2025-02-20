@@ -1,6 +1,6 @@
 import { Facebook, Twitter, Instagram, ChevronUp, Mail } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import p from '../assets/image (12).svg';
+
 import { useState, useEffect } from "react";
 
 const Footer = () => {
