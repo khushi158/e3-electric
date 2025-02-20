@@ -75,17 +75,7 @@ const Header = () => {
           </a>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex space-x-6">
-            <a href="#home" className="text-white hover:text-gray-300 transition">
-              Home
-            </a>
-            <a href="#features" className="text-white hover:text-gray-300 transition">
-              Features
-            </a>
-            <a href="#contact" className="text-white hover:text-gray-300 transition">
-              Contact
-            </a>
-          </nav>
+        
 
           {/* "I'm Interested" Button */}
           <button
